@@ -1,0 +1,41 @@
+{% extends 'layout/layout.twig' %}
+
+{% block main %}
+    <section>
+        <div class="container">
+            <form action="" method="post">
+                <div class="form-group">
+                    <label>Nom</label>
+                    <input class="form-control" type="text" value="{{person.Firstname}}" name="FirstName"/>
+                </div>
+                <div class="form-group">
+                    <label>Prénom</label>
+                    <input class="form-control" type="text" value="{{person.Lastname}}" name="LastName"/>
+                </div>
+                <div class="form-group">
+                    <label>Téléphone</label>
+                    <input class="form-control" type="text" value="{{person.Phone}}" name="Phone"/>
+                </div>
+                <div class="form-group">
+                    <label>Adresse</label>
+                    <input class="form-control" type="text" value="{{person.StreetAddress}}" name="StreetAddress"/>
+                </div>
+                <div class="form-group">
+                    <label>Ville</label>
+                    <input class="form-control" type="text" value="{{person.City}}" name="City"/>
+                </div>
+                <div class="form-group">
+                    <label>Code postal</label>
+                    <input class="form-control" type="text" value="{{person.Zipcode}}" name="Zipcode"/>
+                </div>
+                <div class="form-group">
+                    <label>Pays</label>
+                    <input class="form-control" type="text" value="{{person.Country}}" name="Country"/>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Modifier</button>
+                </div>
+            </form>
+        </div>
+    </section>
+{% endblock %}
